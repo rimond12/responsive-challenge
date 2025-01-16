@@ -177,9 +177,31 @@
 /* Support-Section */
 .support-section-container{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     text-align: center;
     border-radius: 8px;
     background: rgba(39, 39, 39, 0.05);
-    margin: 20px 240px;
+    margin: 50px 240px;
+    
+}
+.support-section-img img{
+    padding: 50px 50px 5px 50px;
+}
+.support-section-description{
+    color: rgba(39, 39, 39, 0.8);
+    font-family: Lato;
+    font-size: 24px;
+    font-weight: 600;
+    
+    letter-spacing: 0%;
+    text-align: center;
+}
+/* Support-Section Media Query */
+@media screen and (max-width: 576px) {
+    .support-section-container{
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        margin: calc(100% - 410px);
+    }
 }
