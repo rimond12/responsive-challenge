@@ -111,7 +111,6 @@
 .featured-container{
     display: flex;
     justify-content: center;
-    width: 594px;
     text-align: center;
     width: 100%;
     margin-top: 50px;
@@ -132,10 +131,55 @@
     padding-top: 10px;
 }
 /* Featured media Query */
-@media screen and (max-width:) {
+@media screen and (max-width: 576px) {
     .featured-container{
         flex-direction: column;
         width: 100%;
         height: 100%;
     }
+}
+/* Flower Tree Section */
+.flower-tree-container{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 20px;
+    align-items: center;
+}
+.flower-card{
+    text-align: center;
+}
+.flower-img{
+    min-height: 300px;
+    background-color: rgba(167, 33, 98, 0.15);
+    padding: 20px;
+    border-radius: 100px 100px 0px 0px;
+    padding-bottom: 0px;
+}
+.flower-img img{
+    vertical-align: middle;
+    width: 100%;
+}
+.colour1{
+    background: rgba(5, 151, 160, 0.15);
+    padding: 40px 0px 40px 0px;
+}
+.colour2{
+    background: rgba(71, 125, 17, 0.15);
+    width: calc(100% - 70px);
+}
+/* Flower Tree Media query */
+@media screen and (max-width: 576px) {
+    .flower-tree-container{
+        flex-direction: column;
+    }
+}
+/* Support-Section */
+.support-section-container{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    border-radius: 8px;
+    background: rgba(39, 39, 39, 0.05);
+    margin: 20px 240px;
 }
