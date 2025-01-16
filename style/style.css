@@ -107,3 +107,35 @@
     margin: 10px 142px 10px 142px;
 }
 }
+/* featured Section */
+.featured-container{
+    display: flex;
+    justify-content: center;
+    width: 594px;
+    text-align: center;
+    width: 100%;
+    margin-top: 50px;
+}
+.featured-head{
+    text-align: center;
+    color: rgb(39, 39, 39);
+    font-family: Lato;
+    font-size: 40px;
+    font-weight: 800;
+}
+.featured-para{
+    text-align: center;
+    color: rgba(39, 39, 39, 0.6);
+    font-family: Lato;
+    font-size: 18px;
+    font-weight: 800;
+    padding-top: 10px;
+}
+/* Featured media Query */
+@media screen and (max-width:) {
+    .featured-container{
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+    }
+}
